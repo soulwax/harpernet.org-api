@@ -1,0 +1,30 @@
+{
+    "name": "harpernet.org-api",
+    "version": "0.1.0",
+    "description": "Backend API for harpernet.org with the sole purpose of creating anonymous stats for the quiz game",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "dev": "nodemon src/app.js",
+        "pm2": "pm2 start src/app.js --name harpernet-api --watch --ignore-watch=\"node_modules\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/soulwax/harpernet.org-api.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "GPL-3.0-only",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/soulwax/harpernet.org-api/issues"
+    },
+    "homepage": "https://github.com/soulwax/harpernet.org-api#readme",
+    "dependencies": {
+        "compression": "^1.8.1",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0",
+        "helmet": "^8.1.0",
+        "sequelize": "^6.37.7"
+    }
+}
